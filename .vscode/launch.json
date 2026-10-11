@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/bagunceitor",
             "args": [
-                "predio32.jpg"
+                "loboguara.png"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
