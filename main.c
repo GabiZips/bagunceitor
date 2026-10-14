@@ -135,7 +135,7 @@ int main(int argc, char *argv[]) {
     aplicar_confusao(&recuperada);
 
     // Mostra as mesmas posicoes de 8 x 8 pixels para comparar as etapas
-    printf("\nDepois de alterar somente as cores - RGB em hexadecimal:\n");
+    printf("\nDepois de alterar somente as cores:\n");
     for (int y = 0; y < 8 && y < recuperada.height; y++) {
         for (int x = 0; x < 8 && x < recuperada.width; x++) {
             int posicao = y * recuperada.width + x;
@@ -170,7 +170,7 @@ int main(int argc, char *argv[]) {
     desembaralhar_mosaico(&out, &recuperada, mapa);
 
     // Mostra as mesmas posicoes de 8 x 8 pixels para comparar as etapas
-    printf("\nDepois de desfazer o mosaico (cores ainda alteradas) - RGB em hexadecimal:\n");
+    printf("\nDepois de desfazer o mosaico (cores ainda alteradas): \n");
     for (int y = 0; y < 8 && y < recuperada.height; y++) {
         for (int x = 0; x < 8 && x < recuperada.width; x++) {
             int posicao = y * recuperada.width + x;
@@ -183,7 +183,7 @@ int main(int argc, char *argv[]) {
     desfazer_confusao(&recuperada);
 
     // Mostra as mesmas posicoes de 8 x 8 pixels para comparar as etapas
-    printf("\nDepois de recuperar as cores (imagem recuperada) - RGB em hexadecimal:\n");
+    printf("\nDepois de recuperar as cores (imagem recuperada): \n");
     for (int y = 0; y < 8 && y < recuperada.height; y++) {
         for (int x = 0; x < 8 && x < recuperada.width; x++) {
             int posicao = y * recuperada.width + x;
